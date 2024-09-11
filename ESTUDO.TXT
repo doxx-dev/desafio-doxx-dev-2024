@@ -1,0 +1,17 @@
+Comentários Detalhados
+Construtor constructor():
+
+Define a estrutura inicial dos recintos e a configuração dos animais, incluindo informações como número do recinto, bioma, tamanho total, e lista de animais. Além disso, define um dicionário com detalhes sobre cada tipo de animal, como tamanho e biomas em que eles podem viver.
+Método analisaRecintos(animal, quantidade):
+
+Valida o animal: Verifica se o animal existe na lista de animais.
+Valida a quantidade: Confirma que a quantidade fornecida é um número positivo e inteiro.
+Calcula o espaço livre: Para cada recinto, calcula o espaço ocupado pelos animais existentes e verifica se há espaço suficiente para o animal solicitado.
+Verifica o conforto: Utiliza o método verificaConforto() para garantir que o animal solicitado pode viver confortavelmente no recinto.
+Retorna os recintos viáveis: Se houver recintos adequados, retorna uma lista deles; caso contrário, retorna uma mensagem de erro.
+Método verificaConforto(recinto, tipoAnimal, quantidade):
+
+Verifica compatibilidade com carnívoros: Garante que carnívoros não compartilham recinto com presas, a menos que sejam a única espécie.
+Verifica compatibilidade com o bioma para hipopótamos: Hipopótamos precisam de um recinto que seja tanto 'savana' quanto 'rio'.
+Verifica compatibilidade para macacos: Garante que macacos não são colocados em recintos vazios.
+Verifica coexistência com outros carnívoros: Garante que o animal não deve coexistir com outros carnívoros já presentes no recinto.
